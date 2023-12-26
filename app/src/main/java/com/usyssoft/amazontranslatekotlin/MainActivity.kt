@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        main("Merhaba Dünya")
+        main("Makale örneği arayanlar için birbirinden güzel uzun ve kısa makale örneklerini bir araya getirdik. 7 farklı makaleyi aşağıda başlıklar halinde sizlere sunuyoruz. Okumanın önemi, sınav stresi, bilgisayarın zararları, televizyonun zararları ve diğer başlıklar altında makale örnekleri hazırladık.")
 
 
     }
@@ -35,9 +35,9 @@ class MainActivity : AppCompatActivity() {
     fun doLongRunningTask(params: Array<out String>): String? {
 
         try {
-            val accessKey = "AKIAIOSFODNN7EXAMPLE"
-            val secretKey = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
-            val region = Regions.US_WEST_2
+            val accessKey = "accessKey"
+            val secretKey = "SecretKey"
+            val region = Regions.EU_CENTRAL_1
 
             val credentials = BasicAWSCredentials(accessKey, secretKey)
             val translateClient = AmazonTranslateClient(credentials)
